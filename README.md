@@ -1,7 +1,3 @@
-# dockerized-redis-flask-app
-
-Absolutely! Here's a README you can use for your GitHub repository, tailored to your project without any changes to your existing code:
-
 # Simple Dockerized Flask-Redis Hit Counter
 
 This project demonstrates a basic hit counter application built using Flask and Redis, containerized with Docker for easy deployment.
