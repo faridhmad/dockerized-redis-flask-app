@@ -13,6 +13,7 @@ This project demonstrates a basic hit counter application built using Flask and 
 1. **Flask App (`app.py`)**:
    * Initializes a connection to a Redis instance.
    * The `/` route increments a counter in Redis and displays the current count to the user.
+   * The `/health` route provides a simple way to check the health status of the Flask application and its connection to the Redis server.
 2. **Docker Configuration:**
    * **`Dockerfile`:** Builds a Docker image containing the Flask application, its dependencies, and a production-ready WSGI server (Gunicorn).
    * **`compose.yml`:** Defines services for the Flask app and a Redis instance, managing their interaction and making it easy to start them together.
@@ -39,7 +40,7 @@ This project demonstrates a basic hit counter application built using Flask and 
 * `docker-compose.yml`: Configuration for Docker Compose.
 * `requirements.txt`: Python dependencies.
 
-## Future Improvements (Optional)
+## Future Improvements
 
 * **Environment Variables:** Store Redis connection details (host, port) in environment variables for better configuration management.
 * **Persistent Volume:** Use a Docker volume to make the Redis data persistent even if the container is stopped or removed.
